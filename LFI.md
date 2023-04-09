@@ -11,11 +11,14 @@ Bấm các trang. Có vẻ như điều duy nhất thay đổi là tham số tra
 ```powershell
 http://192.168.0.101/dvwa/vulnerabilities/fi/?page=file4.php
 ```
-Và file4.php hiện ra, cho chúng ta biết khả năng có lỗ hổng LFI ở đây
+<img src="https://github.com/xaw3ep/LFI/blob/main/res/1.png" width="1000">
+Và file4.php hiện ra, cho chúng ta biết khả năng có lỗ hổng LFI ở đây.
+
 Để chắc chắn hơn chúng ta có thể thử thêm vài thứ
 ```powershell
 http://192.168.0.101/dvwa/vulnerabilities/fi/?page=https://google.com
 ```
+<img src="https://github.com/xaw3ep/LFI/blob/main/res/2.png" width="1000">
 Bùm, trang google đã được chèn thêm vào trang web
 ## 3. Cách thức khai thác
 Khai thác LFI khá giống với Directory & Path Traversal
